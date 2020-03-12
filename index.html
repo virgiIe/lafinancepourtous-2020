@@ -1,84 +1,267 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" >
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Finance pour tous 2020</title>
+  <meta charset="UTF-8">
+  <title>HTML FinancePourTous
+  </title>
+  <!-- <link rel='stylesheet' href='https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css'> -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src="assets/app.js"></script>
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:500,700&amp;display=swap'>
+  <!-- <link rel="stylesheet" href="assets/style copy.css"> -->
+  <link rel="stylesheet" href="assets/style-position.css">
 
-    <link rel="stylesheet" href="assets/app.css">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
-    <script src="assets/app.js"></script>
+
 </head>
 <body>
 
-    <div>
-        <h1>Simulateur d'assurance-vie</h1>
-        <h2>Quel serait le montant d'une assurance-vie ouvert à la naissance d'un enfant en 2000 le jour de ses 18 ans ?</h2>
+  <!-- Titre et sous-titre-->
+  <div class="haut">
+    <h1>Simulateur d'assurance-vie</h1>
+    <h2>Quel serait le montant d'une assurance-vie ouvert à la naissance d'un enfant en 2000 le jour de ses 18 ans ?</h2>
+  </div>
+
+  <!-- Partie gauche -->
+  <div class="partie-gauche">
+  
+    <!-- Partie mois -->
+    <div class="mois">
+
+      <!-- Légende et case avec le montant par Mois-->
+      <section class="groupe-montant">
+        <label><h2>Montant par mois</h2></label>
+        <input id="inputMontantMois" type="number" placeholder="0" value=""/>
+      </section>
+    
+      <!-- Boutons -1 et +1 euro-->
+      <section class="zone-bouton">
+        <img src="assets/png/piece.png" alt="" >
+        <button id="boutonMoisMoins1" class="unite" type="button"><i>-</i></button>
+        <button id="boutonMoisPlus1" class="unite" type="button"><i>+</i></button>
+      </section>
+
+
+      <!-- Boutons -10 et +10 euro-->
+      <section class="zone-bouton">
+          <img src="assets/png/billet10.png" alt="" >
+        <button id="boutonMoisMoins10" class="unite" type="button"><i>-</i></button>
+        <button id="boutonMoisPlus10" class="unite" type="button"><i>+</i></button>
+        </section>
+
+
+      <!-- Boutons -100 et +100 euro-->
+      <section class="zone-bouton">
+        <img src="assets/png/liasse100.png" alt="" >
+        <button id="boutonMoisMoins100" class="unite" type="button"><i>-</i></button>
+        <button id="boutonMoisPlus100" class="unite" type="button"><i>+</i></button>
+      </section>
+
+
     </div>
 
-    <div>
-        <p>1228€</p>
-        <p>1100€<br>Total investi</p>
-        <p>128€<br>Total intérêts net</p>
+    <!-- Partie anniversaire -->
+    <div class="anniversaire">
+
+      <!-- Légende et case avec le montant par Anniversaire-->
+      <section class="groupe-montant">
+        <label><h2>Montant par anniversaire</h2></label>
+        <input id="inputMontantAnniversaire" type="number" placeholder="0" value=""/>
+      </section>
+    
+      <!-- Boutons -1 et +1 euro-->
+      <section class="zone-bouton">
+        <img src="assets/png/piece.png" alt="" >
+        <button id="boutonAnniversaireMoins1" class="unite" type="button"><i>-</i></button>
+        <button id="boutonAnniversairePlus1" class="unite" type="button"><i>+</i></button>
+      </section>
+
+
+      <!-- Boutons -10 et +10 euro-->
+      <section class="zone-bouton">
+          <img src="assets/png/billet10.png" alt="" >
+        <button id="boutonAnniversaireMoins10" class="unite" type="button"><i>-</i></button>
+        <button id="boutonAnniversairePlus10" class="unite" type="button"><i>+</i></button>
+        </section>
+
+
+      <!-- Boutons -100 et +100 euro-->
+      <section class="zone-bouton">
+        <img src="assets/png/liasse100.png" alt="" >
+        <button id="boutonAnniversaireMoins100" class="unite" type="button"><i>-</i></button>
+        <button id="boutonAnniversairePlus100" class="unite" type="button"><i>+</i></button>
+      </section>
+
+
+
+
     </div>
 
-    <form>
-        <label>Somme par mois</label><br>
-        <p>10€</p>
-        <img src="" alt="1€">
-        <input type="button" id="moisMoins1" value="-">
-        <input type="button" id="moisPlus1" value="+">
-        <img src="" alt="10€">
-        <input type="button" id="moisMoins10" value="-">
-        <input type="button" id="moisPlus10" value="+">
-        <img src="" alt="100€">
-        <input type="button" id="moisMoins100" value="-">
-        <input type="button" id="moisPlus100" value="+">
-    </form>
 
-    <form>
-      <label>Somme par anniversaire</label>
-      <p>10€</p>
-      <img src="" alt="1€">
-      <input type="button" id="anniversaireMoins1" value="-">
-      <input type="button" id="anniversairePlus1" value="+">
-      <img src="" alt="10€">
-      <input type="button" id="anniversaireMoins10" value="-">
-      <input type="button" id="anniversairePlus10" value="+">
-      <img src="" alt="100€">
-      <input type="button" id="anniversaireMoins100" value="-">
-      <input type="button" id="anniversairePlus100" value="+">
-  </form>
 
-    <div class="" id="">
-        <ul class="">
-          <li class="">
-            <a href="" class="">Part fonds euros et unité de compte</a>
-          </li>
-          <li class="">
-            <a href="" class="">frais de versement</a>
-          </li>
-          <li class="">
-            <a href="" class="">frais de gestion</a>
-          </li>
-        </ul>
-      </div>
 
-    <div>
-      <button id="startCalcul">Calculer !</button>
+
+
+
+
+
+    <!-- Partie paramètres avancés -->
+    <div class="parametres-avances">
+
+      <!-- Légende Paramètres avancés-->
+      <section class="groupe-avances">
+        <label><h2>Paramètre avancés</h2></label>
+      </section>
+
+
+
+        <!-- Curseur part Euros et part UC -->
+        <section class="curseur">
+          <span>Euros</span>
+
+          <span>Unités de compte</span>
+        </section>
+
+
+        <!-- Légende et case Frais de souscription-->
+
+
+
+
+        <!-- Légende et case Frais de gestion -->          
+
+      
+
+
+
     </div>
 
-    <div>
-        <table>
-            <ul>objectifs</ul>
-            <il>objectif1</il>
-            <il>objectif2</il>
-            <il>objectif3</il>
-        </table>
+
+
+
+    <!-- Bouton de calcul -->
+    <div class="calcul">
+      <button class="bleu" type="button" id="calculer">Calculer</button>
     </div>
 
-    <footer>
-        <p>copyright : Virgile Mendes</p>
-    </footer>
+
+
+  </div>
+
+
+  <!-- Partie droite -->
+  <div class="partie-droite">
+
+
+    <!-- Légende résultat TOTAL -->
+    <div class="total">
+      <span>Total : </span>
+      <input id="id-total" type="number" placeholder="" value="4883.52"/>
+      <span>€</span>
+    </div>
+
+    <!-- Légendes investis brut et gagnés net -->
+    <div class="total-sous">
+      <input id="id-totalInvestis" type="number" placeholder="" value="3960"/>
+      <span>€ investis</span>
+
+      <input id="id-totalGagne" type="number" placeholder="" value="923.52"/>
+      <span>€ gagnés net</span></h2>
+    </div>
+
+
+    <!-- Emoji / Titre / Montant du 1 -->
+    <div class="echelon1">
+      <p class="emoji" role="image" aria-label="fusée">🚀</p>
+      <span class="echelon-texte">
+        <h2>Vol dans l'espace</h2>
+        <p>226 148 €</p>
+      </span>
+    </div>
+
+    <!-- Emoji / Titre / Montant du 2 -->
+    <div class="echelon2">
+      <p class="emoji" role="image" aria-label="carte du monde">🗺</p>
+      <span class="echelon-texte">
+        <h2>Tour du monde pour 4 pendant 1 an</h2>
+        <p>90 000 €</p>
+      </span>
+    </div>
+
+    <!-- Emoji / Titre / Montant du 3 -->
+    <div class="echelon3">
+      <p class="emoji" role="image" aria-label="microphone">🎤</p>
+      <span class="echelon-texte">
+        <h2>Se produire à l'Olympia</h2>
+        <p>25 000 €</p>
+      </span>
+    </div>
+
+    <!-- Emoji / Titre / Montant du 4 -->
+    <div class="echelon4">
+      <p class="emoji" role="image" aria-label="baguette de pain">🥖</p>
+      <span class="echelon-texte">
+        <h2>1 m<sup>2</sup> dans le VI<sup>e</sup> arrondissement de Paris</h2>
+        <p>14 270 €</p>
+      </span>
+    </div>
+
+    <!-- Emoji / Titre / Montant du 5 -->
+    <div class="echelon5">
+      <p class="emoji" role="image" aria-label="ballon de football américain">🏈</p>
+        <span class="echelon-texte">
+        <h2>Une place pour le Super Bowl</h2>
+        <p>9 723 €</p>
+      </span>
+    </div>
+
+    <!-- Emoji / Titre / Montant du 6 -->
+    <div class="echelon6">
+      <p class="emoji" role="image" aria-label="ballon de football">⚽️</p>
+      <span class="echelon-texte">
+        <h2>La finale du Mondial 2018 pour 4</h2>
+        <p>4 400 €</p>
+      </span>
+    </div>
+
+    <!-- Emoji / Titre / Montant du 7 -->
+    <div class="echelon7">
+      <p class="emoji" role="image" aria-label="voiture">🚗</p>
+      <span class="echelon-texte">
+        <h2>Le permis de conduire B</h2>
+        <p>1 700 €</p>
+      </span>
+    </div>
+
+
+
+    <!-- Tableau (esthétique) -->
+    <!--
+    <div class="tableau">
+    </div>
+    -->
+    
+
+
+
+
+  </div>
+  
+
+
+
+  <!-- Footer -->
+  <div class="bas">
+    <h2> Réalisé par Virgile Mendes</h2>
+
+  </div>
+  
+
+
+
+
+
+
+
+
 </body>
 </html>

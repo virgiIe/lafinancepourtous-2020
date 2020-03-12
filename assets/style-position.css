@@ -1,0 +1,245 @@
+img {
+    width: 10px;
+    height: 10px;
+}
+
+i {
+    font-style: normal;
+}
+
+.haut,.partie-gauche, .partie-droite, .bas {
+    border: solid 0.1px;
+    border-color: green;
+}
+
+.haut {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+
+    height: 130px;
+    width: 1280px;
+}
+
+.partie-gauche {
+    position: absolute;
+    top: 130px;
+    left: 0px;
+    right: 640px;
+
+    height: 825px;
+    width: 640px;
+}
+
+    .mois, .anniversaire, .parametres-avances, .calcul {
+
+        border: solid 0.1px;
+        border-color: green;
+
+    }
+
+    .mois {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+    
+        height: 310px;
+        width: 640px;
+    }
+
+    .anniversaire {
+        position: absolute;
+        top: 310px;
+        left: 0px;
+        right: 0px;
+    
+        height: 310px;
+        width: 640px;
+    }
+
+    .parametres-avances {
+        position: absolute;
+        top: 620px;
+        left: 0px;
+        right: 0px;
+    
+        height: 115px;
+        width: 640px;
+    }
+
+    .calcul {
+        position: absolute;
+        top: 735px;
+        left: 0px;
+        right: 0px;
+    
+        height: 90px;
+        width: 640px;
+    }
+
+
+
+
+
+
+
+    
+.partie-droite {
+    position: absolute;
+    top: 130px;
+    left: 640px;
+    right: 0px;
+
+    height: 825px;
+    width: 640px;
+}
+
+
+        
+    .total, .total-sous, .echelon1, .echelon2, .echelon3, .echelon4, .echelon5, .echelon6, .echelon7 {
+        border: solid 0.1px;
+        border-color: red;
+    }
+
+
+    .total {
+        position: absolute;
+        top: 0px;
+        left: 43px;
+        right: 0px;
+    
+        height: 70px;
+        width: 570px;
+    }
+
+    .total-sous {
+        position: absolute;
+        top: 70px;
+        left: 43px;
+        right: 0px;
+    
+        height: 50px;
+        width: 570px;
+    }
+
+    .echelon1 {
+        position: absolute;
+        top: 120px;
+        left: 43px;
+        right: 0px;
+    
+        height: 95px;
+        width: 570px;
+    }
+
+    .echelon2 {
+        position: absolute;
+        top: 215px;
+        left: 43px;
+        right: 0px;
+    
+        height: 95px;
+        width: 570px;
+    }
+
+    .echelon3 {
+        position: absolute;
+        top: 310px;
+        left: 43px;
+        right: 0px;
+    
+        height: 95px;
+        width: 570px;
+    }
+
+    .echelon4 {
+        position: absolute;
+        top: 405px;
+        left: 43px;
+        right: 0px;
+    
+        height: 95px;
+        width: 570px;
+    }
+
+    .echelon5 {
+        position: absolute;
+        top: 500px;
+        left: 43px;
+        right: 0px;
+    
+        height: 95px;
+        width: 570px;
+    }
+
+    .echelon6 {
+        position: absolute;
+        top: 595px;
+        left: 43px;
+        right: 0px;
+    
+        height: 95px;
+        width: 570px;
+    }
+
+    .echelon7 {
+        position: absolute;
+        top: 690px;
+        left: 43px;
+        right: 0px;
+    
+        height: 95px;
+        width: 570px;
+    }
+
+        .emoji, .echelon-texte {
+            border: solid 0.1px;
+            border-color: orange;
+        }
+
+        .emoji {
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            right: 0px;
+    
+            margin: 0px;
+        
+            height: 95px;
+            width: 90px;
+        }
+
+        .echelon-texte {
+            position: absolute;
+            top: 0px;
+            left: 90px;
+            right: 0px;
+        
+            height: 95px;
+            width: 480px;
+        }
+
+    /*
+    .tableau {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+    
+        height: 845px;
+        width: 640px;
+    }
+    */
+
+
+.bas {
+    position: absolute;
+    top: 955px;
+    left: 0px;
+    right: 0px;
+
+    height: 69px;
+    width: 1280px;
+}
