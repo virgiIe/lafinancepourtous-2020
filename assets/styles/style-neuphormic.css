@@ -63,6 +63,7 @@ button:active {
 .tableau {
   border-radius: 20px;
   padding: 0px;
+  cursor: default;
 }
 
 

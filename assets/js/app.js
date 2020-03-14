@@ -247,8 +247,21 @@ $(document).ready(function() {
       partUc = 100-partEurosAvances;
       console.log(partUc);
     } else {
-      // console.log('else');
+      console.log('else');
     }
+
+
+    fraisSouscription = fraisSouscriptionFunction ();
+    fraisSouscription = parseFloat(fraisSouscription);
+    console.log(fraisSouscription);
+    
+
+    fraisGestion = fraisGestionFunction ();
+    fraisGestion = parseFloat(fraisGestion);
+    console.log(fraisGestion);
+
+
+
 
     var resultatTotal = calculSimulation (sommeMois,sommeAnniversaire,partEuros,partUc,fraisSouscription,fraisGestion,impot);
     console.log (resultatTotal);
@@ -475,7 +488,22 @@ $(document).ready(function() {
 
 
   function partUeAvancesFunction (){
-    var i = parseInt(partEurosAvances);
-    console.log(i);
-    return i;
+    var partUeAvancesNumber = parseInt(partEurosAvances);
+    console.log(partUeAvancesNumber);
+    return partUeAvancesNumber;
+  }
+
+  function fraisSouscriptionFunction (){
+    var fraisSouscriptionNumber = fraisSouscription.toString().replace(',','.');
+    fraisSouscriptionNumber = parseFloat(fraisSouscriptionNumber);
+    console.log(fraisSouscriptionNumber);
+    return fraisSouscriptionNumber;
+  }
+
+
+  function fraisGestionFunction (){
+    var fraisGestionNumber = fraisGestion.toString().replace(',','.');
+    fraisGestionNumber = parseFloat(fraisGestionNumber);
+    console.log(fraisGestionNumber);
+    return fraisGestionNumber;
   }

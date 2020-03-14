@@ -81,10 +81,24 @@
 /*Modification des inputs*/
 
   /* enlever les flèches à droite */
-  input{
+    /* Firefox */
+    input[type=number] {
+      -moz-appearance: textfield;
+    }
+
+    /* Chrome */
+    input::-webkit-inner-spin-button,
+    input::-webkit-outer-spin-button { 
     -webkit-appearance: none;
-    -moz-appearance: textfield;
-  }
+    margin:0;
+    }
+
+    /* Opéra*/
+    input::-o-inner-spin-button,
+    input::-o-outer-spin-button { 
+    -o-appearance: none;
+    margin:0
+    }
 
   /*parametres font*/
   input {
@@ -185,6 +199,7 @@
   width: 39px;
   height: 26px;
   font-size: 16px;
+  font-weight: 500;
   padding-top: 0px;
   padding-bottom: 0px;
   padding-left: 0px;
@@ -196,10 +211,6 @@
 }
 
 
-
-.legende-fraisSouscription > span:nth-child(1), .legende-fraisGestion > span:nth-child(1) {
-  /* margin-top: 36px; */
-}
 
 
 
@@ -268,4 +279,12 @@
  a:hover {
    font-weight: 700;
  }
- 
+
+
+
+ .container {
+   position: relative;
+   width: 1280px;
+   margin: 0 auto;
+}
+ }
