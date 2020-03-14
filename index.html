@@ -5,11 +5,17 @@
   <title>HTML FinancePourTous
   </title>
   <!-- <link rel='stylesheet' href='https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css'> -->
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-  <script src="assets/app.js"></script>
-  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat:500,700&amp;display=swap'>
-  <!-- <link rel="stylesheet" href="assets/style copy.css"> -->
-  <link rel="stylesheet" href="assets/style-position.css">
+  <script type="text/javascript" src="assets/js/jquery-2.1.3.js"></script>
+  <script src="assets/js/app.js"></script>
+  
+
+  <link rel="stylesheet" href="assets/styles/style-fonts.css">
+  <link rel="stylesheet" href="assets/styles/style-position.css">
+  <link rel="stylesheet" href="assets/styles/style-neuphormic.css">
+  <link rel="stylesheet" href="assets/styles/style-ajustement.css">
+
+
+  <link rel="stylesheet" href="assets/styles/style-slider.css">
 
 
 </head>
@@ -28,13 +34,16 @@
     <div class="mois">
 
       <!-- Légende et case avec le montant par Mois-->
-      <section class="groupe-montant">
+      <section class="legende-montantM">
         <label><h2>Montant par mois</h2></label>
+      </section>
+      <section class="case-montantM">
         <input id="inputMontantMois" type="number" placeholder="0" value=""/>
+        <span>€</span>
       </section>
     
       <!-- Boutons -1 et +1 euro-->
-      <section class="zone-bouton">
+      <section class="zone-boutonG">
         <img src="assets/png/piece.png" alt="" >
         <button id="boutonMoisMoins1" class="unite" type="button"><i>-</i></button>
         <button id="boutonMoisPlus1" class="unite" type="button"><i>+</i></button>
@@ -42,7 +51,7 @@
 
 
       <!-- Boutons -10 et +10 euro-->
-      <section class="zone-bouton">
+      <section class="zone-boutonC">
           <img src="assets/png/billet10.png" alt="" >
         <button id="boutonMoisMoins10" class="unite" type="button"><i>-</i></button>
         <button id="boutonMoisPlus10" class="unite" type="button"><i>+</i></button>
@@ -50,7 +59,7 @@
 
 
       <!-- Boutons -100 et +100 euro-->
-      <section class="zone-bouton">
+      <section class="zone-boutonD">
         <img src="assets/png/liasse100.png" alt="" >
         <button id="boutonMoisMoins100" class="unite" type="button"><i>-</i></button>
         <button id="boutonMoisPlus100" class="unite" type="button"><i>+</i></button>
@@ -63,13 +72,16 @@
     <div class="anniversaire">
 
       <!-- Légende et case avec le montant par Anniversaire-->
-      <section class="groupe-montant">
+      <section class="legende-montantA">
         <label><h2>Montant par anniversaire</h2></label>
+      </section>
+      <section class="case-montantA">
         <input id="inputMontantAnniversaire" type="number" placeholder="0" value=""/>
+        <span>€</span>
       </section>
     
       <!-- Boutons -1 et +1 euro-->
-      <section class="zone-bouton">
+      <section class="zone-boutonG">
         <img src="assets/png/piece.png" alt="" >
         <button id="boutonAnniversaireMoins1" class="unite" type="button"><i>-</i></button>
         <button id="boutonAnniversairePlus1" class="unite" type="button"><i>+</i></button>
@@ -77,7 +89,7 @@
 
 
       <!-- Boutons -10 et +10 euro-->
-      <section class="zone-bouton">
+      <section class="zone-boutonC">
           <img src="assets/png/billet10.png" alt="" >
         <button id="boutonAnniversaireMoins10" class="unite" type="button"><i>-</i></button>
         <button id="boutonAnniversairePlus10" class="unite" type="button"><i>+</i></button>
@@ -85,7 +97,7 @@
 
 
       <!-- Boutons -100 et +100 euro-->
-      <section class="zone-bouton">
+      <section class="zone-boutonD">
         <img src="assets/png/liasse100.png" alt="" >
         <button id="boutonAnniversaireMoins100" class="unite" type="button"><i>-</i></button>
         <button id="boutonAnniversairePlus100" class="unite" type="button"><i>+</i></button>
@@ -108,27 +120,48 @@
     <div class="parametres-avances">
 
       <!-- Légende Paramètres avancés-->
-      <section class="groupe-avances">
-        <label><h2>Paramètre avancés</h2></label>
+      <section class="legende-avances">
+        <label><h2>Paramètres avancés</h2></label>
       </section>
 
-
-
         <!-- Curseur part Euros et part UC -->
-        <section class="curseur">
-          <span>Euros</span>
+        <section class="section-curseur">
+          <div class="avances-euros">
+            <span>Euros</span>
+          </div>
 
-          <span>Unités de compte</span>
+          <div class="neumorphic-slider" onselectstart="return false">
+            <div class="neumorphic-slider__back"></div>
+            <div class="neumorphic-slider__thumb"></div>
+          </div>
+
+          <div class="avances-uc">
+            <span>Unités de compte</span>
+          </div>
         </section>
 
 
         <!-- Légende et case Frais de souscription-->
-
-
-
+        <section class="section-fraisSouscription">
+          <section class="legende-fraisSouscription">
+            <span>Frais de souscription</span>
+          </section>
+          <section class="case-fraisSouscription">
+            <input id="inputFraisSouscription" type="number" placeholder="" value=""/>
+            <span>%</span>
+          </section>
+        </section>
 
         <!-- Légende et case Frais de gestion -->          
-
+        <section class="section-fraisGestion">
+          <section class="legende-fraisGestion">
+            <span>Frais de gestion</span>
+          </section>
+          <section class="case-fraisGestion">
+            <input id="inputFraisGestion" type="number" placeholder="" value=""/>
+            <span>%</span>
+          </section>
+        </section>
       
 
 
@@ -151,21 +184,28 @@
   <!-- Partie droite -->
   <div class="partie-droite">
 
+    <!-- Tableau (esthétique) -->
+    <div class="tableau">
+    </div>
 
     <!-- Légende résultat TOTAL -->
     <div class="total">
       <span>Total : </span>
-      <input id="id-total" type="number" placeholder="" value="4883.52"/>
+      <input id="id-total" type="number" placeholder="" value="" disabled="disabled"/>
       <span>€</span>
     </div>
 
     <!-- Légendes investis brut et gagnés net -->
     <div class="total-sous">
-      <input id="id-totalInvestis" type="number" placeholder="" value="3960"/>
-      <span>€ investis</span>
+      <div class="class-totalInvestis">
+        <input id="id-totalInvestis" type="number" placeholder="" value="" disabled="disabled"/>
+        <span>€ investis brut</span>
+      </div>
 
-      <input id="id-totalGagne" type="number" placeholder="" value="923.52"/>
-      <span>€ gagnés net</span></h2>
+      <div class="class-totalGagne">
+        <input id="id-totalGagne" type="number" placeholder="" value="" disabled="disabled"/>
+        <span>€ gagnés net</span>
+      </div>
     </div>
 
 
@@ -200,7 +240,7 @@
     <div class="echelon4">
       <p class="emoji" role="image" aria-label="baguette de pain">🥖</p>
       <span class="echelon-texte">
-        <h2>1 m<sup>2</sup> dans le VI<sup>e</sup> arrondissement de Paris</h2>
+        <h2>1 m<sup>2</sup> dans le VI<sup>e</sup> arr. de Paris</h2>
         <p>14 270 €</p>
       </span>
     </div>
@@ -234,16 +274,6 @@
 
 
 
-    <!-- Tableau (esthétique) -->
-    <!--
-    <div class="tableau">
-    </div>
-    -->
-    
-
-
-
-
   </div>
   
 
@@ -251,17 +281,12 @@
 
   <!-- Footer -->
   <div class="bas">
-    <h2> Réalisé par Virgile Mendes</h2>
+    <h2>Réalisé par Virgile Mendes</h2>
+    <a href="simulateur-documentation-MENDES-Virgile.pdf">👉 Documentation du projet 👈</a>
+    <p>Icônes réalisées par Gregor Cresnar à partir de www.flaticon.com <br>Chiffres provenant de la FFA, La finance pous tous, Le Parisien et la FIFA</p>
 
   </div>
   
-
-
-
-
-
-
-
 
 </body>
 </html>

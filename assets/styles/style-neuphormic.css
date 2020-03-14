@@ -1,5 +1,6 @@
-/* Réglages primaires */
-html {
+/* Thème inspiré par Swapnil sur CodePen https://codepen.io/swapnet/pen/QWwPVwE */
+
+body, html {
   background-color: #EBECF0;
 }
 
@@ -9,63 +10,28 @@ body, p, input, select, textarea, button {
   font-size: 16px;
 }
 
-body, p {
+div, p {
   color: #BABECC;
   text-shadow: 1px 1px 1px #FFF;
 }
 
-/* Réglages zones de la page */
-.titre {
-  margin-top: 13px;
-  margin-bottom: 13px;
-  text-align: center;
-}
-
-.partie-gauche {
-  width: 50vh;
-}
-
-  .mois, .anniversaire {
-
-  }
-
-  .groupe-montant {
-
-  }
-
-  .zone-bouton {
-
-  }
-
-
-.partie-droite {
-  width: 50vh;
-  margin: 10px;
-  padding: 5px;
-}
-
-
-
-
-/* Réglages esthetique titre montant */
-label {
-  display: flex;
-  flex: 1;
-  margin-bottom: 24px;
-  width: 60%;
-}
-
-
-/* Réglages esthetique input -> case pour les montants */
-input {
+button, .tableau, input {
   border: 0;
-  /* outline: 0; */
+  outline: 0;
   font-size: 16px;
   border-radius: 320px;
   padding: 16px;
   background-color: #EBECF0;
   text-shadow: 1px 1px 0 #FFF;
+}
 
+label {
+  display: block;
+  margin-bottom: 24px;
+  width: 100%;
+}
+
+input {
   margin-right: 8px;
   box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
   width: 100%;
@@ -74,29 +40,11 @@ input {
   appearance: none;
   -webkit-appearance: none;
 }
-
 input:focus {
   box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
 }
 
-/* Réglages espace zone-bouton -> img et boutons - et + */
-.zone-bouton {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-}
-
-
-/* Réglages esthetique buttons -> boutons - et + et Calculer */
-button {
-  border: 0;
-  /* outline: 0; */
-  font-size: 16px;
-  border-radius: 320px;
-  padding: 16px;
-  background-color: #EBECF0;
-  text-shadow: 1px 1px 0 #FFF;
-
+button, .tableau {
   color: #61677C;
   font-weight: bold;
   box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
@@ -104,18 +52,22 @@ button {
   cursor: pointer;
   font-weight: 600;
 }
-
 button:hover {
   box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
 }
-
 button:active {
   box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
 }
 
 
-/* Réglages boutons - et + */
-button.unite {
+.tableau {
+  border-radius: 20px;
+  padding: 0px;
+}
+
+
+
+.unite {
   border-radius: 8px;
   line-height: 0;
   width: 48px;
@@ -124,18 +76,13 @@ button.unite {
   justify-content: center;
   align-items: center;
   margin: 0 8px;
-  font-size: 19.2px;
   margin-right: 0;
+  font-size: 19.2px;
 }
 
-
-/* Réglages bouton Calculer */
-button.bleu {
+.bleu {
   display: block;
   width: 100%;
-  color: #004ace;
+  color: #0055fe;
 }
-
-
-
 

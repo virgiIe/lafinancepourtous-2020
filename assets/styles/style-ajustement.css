@@ -1,0 +1,271 @@
+
+/* titres en bleu */
+  .haut>h1, label, .total>span {
+    color: #0055fe;
+  }
+
+/* textes haut et bas centrés */
+  .haut, .bas {
+    text-align: center;
+  }
+
+  .haut>h2 {
+    padding-left: 20%;
+    padding-right: 20%;
+
+    margin: 0;
+  }
+
+  .haut>h1 {
+    margin-bottom: 0px;
+  }
+
+
+
+
+
+/* Modifications des margin gauche pour le € et %*/
+  .case-montantM > span:nth-child(2), .case-montantA > span:nth-child(2), .total > span:nth-child(3), .class-totalGagne > span:nth-child(2), .class-totalInvestis > span:nth-child(2) {
+    margin-left: -10px;
+  }
+
+.unite {
+  margin-left: 17px;
+}
+
+/* Modifications des margin haut bas des echelons*/
+.echelon-texte>h2 {
+  margin-bottom: 0px;
+}
+
+.echelon-texte>p {
+  margin-top: 0px;
+}
+
+/*padding des emoji*/
+  .emoji {
+    width: 60px;
+    height: 80px;
+    padding: 15px 0 0 30px;
+  }
+
+  img {
+    width: 120px;
+    height: 120px;
+    padding-top: 15px;
+    padding-left: 15px;
+    padding-bottom: 15px;
+  }
+
+
+.total {
+  padding: 5px 0 0 165px ;
+  height: 57px;
+  width: 405px;
+}
+
+
+
+/* taille et densite de la font dans Total */
+  .total {
+    font-size: 24px;
+  }
+
+  .total, .total-sous {
+    font-weight: 700;
+  }
+
+
+
+
+/*Modification des inputs*/
+
+  /* enlever les flèches à droite */
+  input{
+    -webkit-appearance: none;
+    -moz-appearance: textfield;
+  }
+
+  /*parametres font*/
+  input {
+    width: 130px; /* a supprimer apres edit */
+    font-weight: 700;
+    text-align: right;
+  }
+
+  .case-montantM>input, .case-montantA>input, .total>input {
+    color: #0055fe;
+    font-size: 24px;
+  }
+
+  .class-totalGagne>input, .class-totalInvestis>input, .case-fraisSouscription>input, .case-fraisGestion>input {
+    color: #BABECC;
+  }
+
+    .total>input {
+      width: 150px;
+      text-align: center;
+      padding-right: 0px;
+      padding-left: 0;
+      font-size: 24px;
+    }
+
+    .total>input, .class-totalGagne>input, .class-totalInvestis>input {
+      box-shadow: none;
+    }
+
+    .class-totalGagne>input, .class-totalInvestis>input {
+      padding-right: 0;
+      padding-left: 0;
+
+      width: 110px;
+    }
+
+    .class-totalInvestis {
+      padding-left: 12px;
+      width: 235px;
+     }
+     
+
+
+
+
+/* A trier */
+
+
+
+.case-montantM > span:nth-child(2), .case-montantA > span:nth-child(2) {
+  font-size: 24px;
+}
+
+
+
+.legende-montantA > label:nth-child(1) > h2:nth-child(1), .legende-montantM > label:nth-child(1) > h2:nth-child(1) {
+  margin-top: 35px;
+  margin-left: 27px;
+}
+
+
+
+#inputMontantMois {
+  margin-left: 10px;
+  margin-top: 20px;
+  padding-right: 16px;
+  width: 340px;
+  color: #0055fe;
+}
+
+#inputMontantAnniversaire {
+  margin-left: 10px;
+  margin-top: 20px;
+  padding-right: 16px;
+  width: 256px;
+  color: #0055fe;
+}
+
+
+.case-montantM > span:nth-child(2), .case-montantA > span:nth-child(2) {
+  color: #0055fe;
+  font-weight: 700;
+ }
+ 
+
+
+
+
+
+.legende-avances > label:nth-child(1) > h2:nth-child(1), .legende-avances > label:nth-child(2) > h2:nth-child(2) {
+  margin-top: 12px;
+  margin-left: 27px;
+}
+
+
+
+#inputFraisSouscription, #inputFraisGestion {
+  width: 39px;
+  height: 26px;
+  font-size: 16px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  text-align: center;
+  margin-left: 8px;
+  margin-right: 0px;
+  margin-top: 6px;
+}
+
+
+
+.legende-fraisSouscription > span:nth-child(1), .legende-fraisGestion > span:nth-child(1) {
+  /* margin-top: 36px; */
+}
+
+
+
+.legende-fraisSouscription, .legende-fraisGestion {
+  margin-top: 0px;
+  padding-top: 7px;
+  padding-bottom: 0px;
+  margin-bottom: -3px;
+  width: 165px;
+  height: 31px;
+}
+
+
+
+
+
+#inputFraisGestion {
+  margin-left: 15px;
+}
+
+
+
+.case-fraisGestion {
+  height: 38px;
+  width: 73px;
+}
+
+
+.calcul {
+  margin-top: 20px;
+  height: 70px;
+  margin-left: 70px;
+  width: 530px;
+ } 
+ 
+ .section-curseur {
+  margin-top: 10px;
+  height: 25px;
+ }
+
+
+ .partie-droite {
+  margin-left: -7px;
+ }
+
+
+
+
+ .bas > h2:nth-child(1) {
+  margin-top: 0px;
+  margin-bottom: 3px;
+ }
+
+ .bas > p:nth-child(3) {
+  margin-top: 3px;
+  margin-bottom: 5px;
+ }
+ 
+
+ 
+ a {
+   color: #BABECC;
+   text-decoration: none;
+ }
+
+ a:hover {
+   font-weight: 700;
+ }
+ 
