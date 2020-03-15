@@ -1,33 +1,39 @@
-
 /* titres en bleu */
-  .haut>h1, label, .total>span {
-    color: #0055fe;
-  }
+.haut>h1,
+label,
+.total>span {
+  color: #0055fe;
+}
 
 /* textes haut et bas centrés */
-  .haut, .bas {
-    text-align: center;
-  }
+.haut,
+.bas {
+  text-align: center;
+}
 
-  .haut>h2 {
-    padding-left: 20%;
-    padding-right: 20%;
+.haut>h2 {
+  padding-left: 20%;
+  padding-right: 20%;
 
-    margin: 0;
-  }
+  margin: 0;
+}
 
-  .haut>h1 {
-    margin-bottom: 0px;
-  }
+.haut>h1 {
+  margin-bottom: 0px;
+}
 
 
 
 
 
 /* Modifications des margin gauche pour le € et %*/
-  .case-montantM > span:nth-child(2), .case-montantA > span:nth-child(2), .total > span:nth-child(3), .class-totalGagne > span:nth-child(2), .class-totalInvestis > span:nth-child(2) {
-    margin-left: -10px;
-  }
+.case-montantM>span:nth-child(2),
+.case-montantA>span:nth-child(2),
+.total>span:nth-child(3),
+.class-totalGagne>span:nth-child(2),
+.class-totalInvestis>span:nth-child(2) {
+  margin-left: -10px;
+}
 
 .unite {
   margin-left: 17px;
@@ -43,23 +49,23 @@
 }
 
 /*padding des emoji*/
-  .emoji {
-    width: 60px;
-    height: 80px;
-    padding: 15px 0 0 30px;
-  }
+.emoji {
+  width: 60px;
+  height: 80px;
+  padding: 15px 0 0 30px;
+}
 
-  img {
-    width: 120px;
-    height: 120px;
-    padding-top: 15px;
-    padding-left: 15px;
-    padding-bottom: 15px;
-  }
+img {
+  width: 120px;
+  height: 120px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 15px;
+}
 
 
 .total {
-  padding: 5px 0 0 165px ;
+  padding: 5px 0 0 165px;
   height: 57px;
   width: 405px;
 }
@@ -67,79 +73,89 @@
 
 
 /* taille et densite de la font dans Total */
-  .total {
-    font-size: 24px;
-  }
+.total {
+  font-size: 24px;
+}
 
-  .total, .total-sous {
-    font-weight: 700;
-  }
+.total,
+.total-sous {
+  font-weight: 700;
+}
 
 
 
 
 /*Modification des inputs*/
 
-  /* enlever les flèches à droite */
-    /* Firefox */
-    input[type=number] {
-      -moz-appearance: textfield;
-    }
+/* enlever les flèches à droite */
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
-    /* Chrome */
-    input::-webkit-inner-spin-button,
-    input::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-    margin:0;
-    }
+/* Chrome */
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
-    /* Opéra*/
-    input::-o-inner-spin-button,
-    input::-o-outer-spin-button { 
-    -o-appearance: none;
-    margin:0
-    }
+/* Opéra*/
+input::-o-inner-spin-button,
+input::-o-outer-spin-button {
+  -o-appearance: none;
+  margin: 0
+}
 
-  /*parametres font*/
-  input {
-    width: 130px; /* a supprimer apres edit */
-    font-weight: 700;
-    text-align: right;
-  }
+/*parametres font*/
+input {
+  width: 130px;
+  /* a supprimer apres edit */
+  font-weight: 700;
+  text-align: right;
+}
 
-  .case-montantM>input, .case-montantA>input, .total>input {
-    color: #0055fe;
-    font-size: 24px;
-  }
+.case-montantM>input,
+.case-montantA>input,
+.total>input {
+  color: #0055fe;
+  font-size: 24px;
+}
 
-  .class-totalGagne>input, .class-totalInvestis>input, .case-fraisSouscription>input, .case-fraisGestion>input {
-    color: #BABECC;
-  }
+.class-totalGagne>input,
+.class-totalInvestis>input,
+.case-fraisSouscription>input,
+.case-fraisGestion>input {
+  color: #BABECC;
+}
 
-    .total>input {
-      width: 150px;
-      text-align: center;
-      padding-right: 0px;
-      padding-left: 0;
-      font-size: 24px;
-    }
+.total>input {
+  width: 150px;
+  text-align: center;
+  padding-right: 0px;
+  padding-left: 0;
+  font-size: 24px;
+}
 
-    .total>input, .class-totalGagne>input, .class-totalInvestis>input {
-      box-shadow: none;
-    }
+.total>input,
+.class-totalGagne>input,
+.class-totalInvestis>input {
+  box-shadow: none;
+}
 
-    .class-totalGagne>input, .class-totalInvestis>input {
-      padding-right: 0;
-      padding-left: 0;
+.class-totalGagne>input,
+.class-totalInvestis>input {
+  padding-right: 0;
+  padding-left: 0;
 
-      width: 110px;
-    }
+  width: 110px;
+}
 
-    .class-totalInvestis {
-      padding-left: 12px;
-      width: 235px;
-     }
-     
+.class-totalInvestis {
+  padding-left: 12px;
+  width: 235px;
+}
+
 
 
 
@@ -148,13 +164,15 @@
 
 
 
-.case-montantM > span:nth-child(2), .case-montantA > span:nth-child(2) {
+.case-montantM>span:nth-child(2),
+.case-montantA>span:nth-child(2) {
   font-size: 24px;
 }
 
 
 
-.legende-montantA > label:nth-child(1) > h2:nth-child(1), .legende-montantM > label:nth-child(1) > h2:nth-child(1) {
+.legende-montantA>label:nth-child(1)>h2:nth-child(1),
+.legende-montantM>label:nth-child(1)>h2:nth-child(1) {
   margin-top: 35px;
   margin-left: 27px;
 }
@@ -178,24 +196,27 @@
 }
 
 
-.case-montantM > span:nth-child(2), .case-montantA > span:nth-child(2) {
+.case-montantM>span:nth-child(2),
+.case-montantA>span:nth-child(2) {
   color: #0055fe;
   font-weight: 700;
- }
- 
+}
 
 
 
 
 
-.legende-avances > label:nth-child(1) > h2:nth-child(1), .legende-avances > label:nth-child(2) > h2:nth-child(2) {
+
+.legende-avances>label:nth-child(1)>h2:nth-child(1),
+.legende-avances>label:nth-child(2)>h2:nth-child(2) {
   margin-top: 12px;
   margin-left: 27px;
 }
 
 
 
-#inputFraisSouscription, #inputFraisGestion {
+#inputFraisSouscription,
+#inputFraisGestion {
   width: 39px;
   height: 26px;
   font-size: 16px;
@@ -214,7 +235,8 @@
 
 
 
-.legende-fraisSouscription, .legende-fraisGestion {
+.legende-fraisSouscription,
+.legende-fraisGestion {
   margin-top: 0px;
   padding-top: 7px;
   padding-bottom: 0px;
@@ -244,47 +266,52 @@
   height: 70px;
   margin-left: 70px;
   width: 530px;
- } 
- 
- .section-curseur {
+}
+
+.section-curseur {
   margin-top: 10px;
   height: 25px;
- }
+}
 
 
- .partie-droite {
+.partie-droite {
   margin-left: -7px;
- }
+}
 
 
 
 
- .bas > h2:nth-child(1) {
+.bas>h2:nth-child(1) {
   margin-top: 0px;
   margin-bottom: 3px;
- }
+}
 
- .bas > p:nth-child(3) {
+.bas>p:nth-child(3) {
   margin-top: 3px;
   margin-bottom: 5px;
- }
- 
-
- 
- a {
-   color: #BABECC;
-   text-decoration: none;
- }
-
- a:hover {
-   font-weight: 700;
- }
-
-
-
- .container {
-   position: relative;
-   width: 1280px;
-   margin: 0 auto;
 }
- }
+
+
+
+a {
+  color: #BABECC;
+  text-decoration: none;
+}
+
+a:hover {
+  font-weight: 700;
+}
+
+
+
+.container {
+  position: relative;
+  width: 1280px;
+  margin: 0 auto;
+}
+
+
+
+body {
+  margin-top: 0px;
+}

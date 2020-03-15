@@ -11,13 +11,6 @@ i {
     font-style: normal;
 }
 
-body {
-    align-content: center;
-}
-
-
-
-
 
 
 /* .haut,.partie-gauche, .partie-droite, .bas {
@@ -48,385 +41,397 @@ body {
         border-color: green;
     } */
 
-    .mois {
-        position: absolute;
-        top: 0px;
-        left: 0px;
-    
-        height: 310px;
-        width: 640px;
-    }
+.mois {
+    position: absolute;
+    top: 0px;
+    left: 0px;
 
-    .anniversaire {
-        position: absolute;
-        top: 310px;
-        left: 0px;
-    
-        height: 310px;
-        width: 640px;
-    }
+    height: 310px;
+    width: 640px;
+}
 
-        /* .legende-montantM, .case-montantM, .legende-montantA, .case-montantA {
+.anniversaire {
+    position: absolute;
+    top: 310px;
+    left: 0px;
+
+    height: 310px;
+    width: 640px;
+}
+
+/* .legende-montantM, .case-montantM, .legende-montantA, .case-montantA {
             border: solid 0.1px;
             border-color: violet;
         } */
 
-        .legende-montantM {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-                
-            height: 90px;
-            width: 255px;
-        }
+.legende-montantM {
+    position: absolute;
+    top: 0px;
+    left: 0px;
 
-        .case-montantM {
-            position: absolute;
-            top: 0px;
-            left: 255px;
-            
-            height: 90px;
-            width: 385px;
-        }
+    height: 90px;
+    width: 255px;
+}
 
-        .legende-montantA {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-                
-            height: 90px;
-            width: 340px;
-        }
+.case-montantM {
+    position: absolute;
+    top: 0px;
+    left: 255px;
 
-        .case-montantA {
-            position: absolute;
-            top: 0px;
-            left: 340px;
-            
-            height: 90px;
-            width: 300px;
-        }
+    height: 90px;
+    width: 385px;
+}
 
-        /* .zone-boutonG,.zone-boutonC, .zone-boutonD {
+.legende-montantA {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+
+    height: 90px;
+    width: 340px;
+}
+
+.case-montantA {
+    position: absolute;
+    top: 0px;
+    left: 340px;
+
+    height: 90px;
+    width: 300px;
+}
+
+/* .zone-boutonG,.zone-boutonC, .zone-boutonD {
             border: solid 0.1px;
             border-color: violet;
         } */
 
-        .zone-boutonG {
-            position: absolute;
-            top: 97px;
-            left: 65px;
-        }
+.zone-boutonG {
+    position: absolute;
+    top: 97px;
+    left: 65px;
+}
 
-        .zone-boutonC {
-            position: absolute;
-            top: 97px;
-            left: 255px;
-        }
+.zone-boutonC {
+    position: absolute;
+    top: 97px;
+    left: 255px;
+}
 
-        .zone-boutonD {
-            position: absolute;
-            top: 97px;
-            left: 445px;
-        }
+.zone-boutonD {
+    position: absolute;
+    top: 97px;
+    left: 445px;
+}
 
-        .zone-boutonG,.zone-boutonC, .zone-boutonD {
-            height: 213px;
-            width: 150px;
-        }
+.zone-boutonG,
+.zone-boutonC,
+.zone-boutonD {
+    height: 213px;
+    width: 150px;
+}
 
-    .parametres-avances {
-        position: absolute;
-        top: 620px;
-        left: 0px;
-        
-        height: 115px;
-        width: 640px;
-    }
+.parametres-avances {
+    position: absolute;
+    top: 620px;
+    left: 0px;
 
-    /* .legende-avances, .section-curseur, .section-fraisSouscription,.section-fraisGestion {
+    height: 115px;
+    width: 640px;
+}
+
+/* .legende-avances, .section-curseur, .section-fraisSouscription,.section-fraisGestion {
         border: solid 0.1px;
         border-color: sienna;
     } */
-        .legende-avances {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            
-            height: 42px;
-            width: 640px;
-        }
+.legende-avances {
+    position: absolute;
+    top: 0px;
+    left: 0px;
 
-        .section-curseur {
-            position: absolute;
-            top: 42px;
-            left: 101px;
-            
-            height: 35px;
-            width: 500px;
-        }
+    height: 42px;
+    width: 640px;
+}
 
-            .avances-euros {
-                position: absolute;
-                top: 0px;
-                left: 0px;
+.section-curseur {
+    position: absolute;
+    top: 42px;
+    left: 101px;
 
-                height: 25px;
-                width: 50px;
-            }
+    height: 35px;
+    width: 500px;
+}
 
-            .avances-uc {
-                position: absolute;
-                top: 0px;
-                left: 319px;
+.avances-euros {
+    position: absolute;
+    top: 0px;
+    left: 0px;
 
-                height: 25px;
-                width: 200px;
-            }
+    height: 25px;
+    width: 50px;
+}
 
+.avances-uc {
+    position: absolute;
+    top: 0px;
+    left: 319px;
 
+    height: 25px;
+    width: 200px;
+}
 
 
-        .section-fraisSouscription {
-            position: absolute;
-            top: 77px;
-            left: 80px;
-            
-            height: 38px;
-            width: 230px;
-        }
 
-            .legende-fraisSouscription {
-                /* border: solid 0.1px;
+
+.section-fraisSouscription {
+    position: absolute;
+    top: 77px;
+    left: 80px;
+
+    height: 38px;
+    width: 230px;
+}
+
+.legende-fraisSouscription {
+    /* border: solid 0.1px;
                 border-color: fuchsia; */
 
-                position: absolute;
-                top: 0px;
-                left: 0px;
-                
-                height: 38px;
-                width: 165px;
-            }
+    position: absolute;
+    top: 0px;
+    left: 0px;
 
-            .case-fraisSouscription {
-               /*  border: solid 0.1px;
+    height: 38px;
+    width: 165px;
+}
+
+.case-fraisSouscription {
+    /*  border: solid 0.1px;
                 border-color: fuchsia; */
 
-                position: absolute;
-                top: 0px;
-                left: 165px;
-                
-                height: 38px;
-                width: 65px;
-            }
+    position: absolute;
+    top: 0px;
+    left: 165px;
 
-        .section-fraisGestion {
-            position: absolute;
-            top: 77px;
-            left: 400px;
-            
-            height: 38px;
-            width: 180px;
-        }
+    height: 38px;
+    width: 65px;
+}
 
-            .legende-fraisGestion {
-                /* border: solid 0.1px;
+.section-fraisGestion {
+    position: absolute;
+    top: 77px;
+    left: 400px;
+
+    height: 38px;
+    width: 180px;
+}
+
+.legende-fraisGestion {
+    /* border: solid 0.1px;
                 border-color: fuchsia; */
 
-                position: absolute;
-                top: 0px;
-                left: 0px;
-                
-                height: 38px;
-                width: 117px;
-            }
+    position: absolute;
+    top: 0px;
+    left: 0px;
 
-            .case-fraisGestion {
-                /* border: solid 0.1px;
+    height: 38px;
+    width: 117px;
+}
+
+.case-fraisGestion {
+    /* border: solid 0.1px;
                 border-color: fuchsia; */
 
-                position: absolute;
-                top: 0px;
-                left: 117px;
-                
-                height: 38px;
-                width: 63px;
-            }
+    position: absolute;
+    top: 0px;
+    left: 117px;
+
+    height: 38px;
+    width: 63px;
+}
 
 
-    .calcul {
-        position: absolute;
-        top: 735px;
-        left: 0px;
-        
-        height: 90px;
-        width: 640px;
-    }
+.calcul {
+    position: absolute;
+    top: 735px;
+    left: 0px;
 
-
-
+    height: 90px;
+    width: 640px;
+}
 
 
 
 
-    
+
+
+
+
 .partie-droite {
     position: absolute;
     top: 130px;
     left: 640px;
-    
+
     height: 825px;
     width: 647px;
 }
 
-    .tableau {
-       /*  border: solid 0.1px;
+.tableau {
+    /*  border: solid 0.1px;
         border-color: red; */
 
-        position: absolute;
-        top: 8px;
-        left: 43px;
-        
+    position: absolute;
+    top: 8px;
+    left: 43px;
 
-        height: 800px;
-        width: 570px;
-    }
 
-        
-    .total, .total-sous, .echelon1, .echelon2, .echelon3, .echelon4, .echelon5, .echelon6, .echelon7 {
-       /*  border: solid 0.1px;
+    height: 800px;
+    width: 570px;
+}
+
+
+.total,
+.total-sous,
+.echelon1,
+.echelon2,
+.echelon3,
+.echelon4,
+.echelon5,
+.echelon6,
+.echelon7 {
+    /*  border: solid 0.1px;
         border-color: red; */
-    }
+}
 
 
-    .total {
-        position: absolute;
-        top: 8px;
-        left: 43px;
-        
-        height: 62px;
-        width: 570px;
-    }
+.total {
+    position: absolute;
+    top: 8px;
+    left: 43px;
 
-    .total-sous {
-        position: absolute;
-        top: 70px;
-        left: 43px;
-        
-        height: 50px;
-        width: 570px;
-    }
+    height: 62px;
+    width: 570px;
+}
 
-        .class-totalInvestis, .class-totalGagne {
-           /*  border: solid 0.1px;
+.total-sous {
+    position: absolute;
+    top: 70px;
+    left: 43px;
+
+    height: 50px;
+    width: 570px;
+}
+
+.class-totalInvestis,
+.class-totalGagne {
+    /*  border: solid 0.1px;
             border-color: orange; */
-        }
+}
 
-        .class-totalInvestis {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            
-            height: 50px;
-            width: 285px;
-        }
+.class-totalInvestis {
+    position: absolute;
+    top: 0px;
+    left: 0px;
 
-        .class-totalGagne {
-            position: absolute;
-            top: 0px;
-            left: 285px;
-            
-            height: 50px;
-            width: 285px;
-        }
+    height: 50px;
+    width: 285px;
+}
 
-    .echelon1 {
-        position: absolute;
-        top: 120px;
-        left: 43px;
-        
-        height: 95px;
-        width: 570px;
-    }
+.class-totalGagne {
+    position: absolute;
+    top: 0px;
+    left: 285px;
 
-    .echelon2 {
-        position: absolute;
-        top: 215px;
-        left: 43px;
-        
-        height: 95px;
-        width: 570px;
-    }
+    height: 50px;
+    width: 285px;
+}
 
-    .echelon3 {
-        position: absolute;
-        top: 310px;
-        left: 43px;
-        
-        height: 95px;
-        width: 570px;
-    }
+.echelon1 {
+    position: absolute;
+    top: 120px;
+    left: 43px;
 
-    .echelon4 {
-        position: absolute;
-        top: 405px;
-        left: 43px;
-        
-        height: 95px;
-        width: 570px;
-    }
+    height: 95px;
+    width: 570px;
+}
 
-    .echelon5 {
-        position: absolute;
-        top: 500px;
-        left: 43px;
-        
-        height: 95px;
-        width: 570px;
-    }
+.echelon2 {
+    position: absolute;
+    top: 215px;
+    left: 43px;
 
-    .echelon6 {
-        position: absolute;
-        top: 595px;
-        left: 43px;
-        
-        height: 95px;
-        width: 570px;
-    }
+    height: 95px;
+    width: 570px;
+}
 
-    .echelon7 {
-        position: absolute;
-        top: 690px;
-        left: 43px;
-        
-        height: 95px;
-        width: 570px;
-    }
+.echelon3 {
+    position: absolute;
+    top: 310px;
+    left: 43px;
 
-        .emoji, .echelon-texte {
-           /*  border: solid 0.1px;
+    height: 95px;
+    width: 570px;
+}
+
+.echelon4 {
+    position: absolute;
+    top: 405px;
+    left: 43px;
+
+    height: 95px;
+    width: 570px;
+}
+
+.echelon5 {
+    position: absolute;
+    top: 500px;
+    left: 43px;
+
+    height: 95px;
+    width: 570px;
+}
+
+.echelon6 {
+    position: absolute;
+    top: 595px;
+    left: 43px;
+
+    height: 95px;
+    width: 570px;
+}
+
+.echelon7 {
+    position: absolute;
+    top: 690px;
+    left: 43px;
+
+    height: 95px;
+    width: 570px;
+}
+
+.emoji,
+.echelon-texte {
+    /*  border: solid 0.1px;
             border-color: orange; */
-        }
+}
 
-        .emoji {
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            
-            margin: 0px;
-        
-            height: 95px;
-            width: 90px;
-        }
+.emoji {
+    position: absolute;
+    top: 0px;
+    left: 0px;
 
-        .echelon-texte {
-            position: absolute;
-            top: 0px;
-            left: 90px;
-            
-            height: 95px;
-            width: 480px;
-        }
+    margin: 0px;
+
+    height: 95px;
+    width: 90px;
+}
+
+.echelon-texte {
+    position: absolute;
+    top: 0px;
+    left: 90px;
+
+    height: 95px;
+    width: 480px;
+}
 
 
 
@@ -436,7 +441,7 @@ body {
     position: absolute;
     top: 955px;
     left: 0px;
-    
+
 
     height: 69px;
     width: 1280px;

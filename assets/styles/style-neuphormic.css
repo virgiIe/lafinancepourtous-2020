@@ -1,21 +1,30 @@
 /* Thème inspiré par Swapnil sur CodePen https://codepen.io/swapnet/pen/QWwPVwE */
 
-body, html {
+body,
+html {
   background-color: #EBECF0;
 }
 
-body, p, input, select, textarea, button {
+body,
+p,
+input,
+select,
+textarea,
+button {
   font-family: 'Montserrat', sans-serif;
   letter-spacing: -0.2px;
   font-size: 16px;
 }
 
-div, p {
+div,
+p {
   color: #BABECC;
   text-shadow: 1px 1px 1px #FFF;
 }
 
-button, .tableau, input {
+button,
+.tableau,
+input {
   border: 0;
   outline: 0;
   font-size: 16px;
@@ -36,25 +45,32 @@ input {
   box-shadow: inset 2px 2px 5px #BABECC, inset -5px -5px 10px #FFF;
   width: 100%;
   box-sizing: border-box;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
-  appearance: none;
+  -moz-appearance: none;
+       appearance: none;
   -webkit-appearance: none;
 }
+
 input:focus {
   box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
 }
 
-button, .tableau {
+button,
+.tableau {
   color: #61677C;
   font-weight: bold;
   box-shadow: -5px -5px 20px #FFF, 5px 5px 20px #BABECC;
+  -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out;
   cursor: pointer;
   font-weight: 600;
 }
+
 button:hover {
   box-shadow: -2px -2px 5px #FFF, 2px 2px 5px #BABECC;
 }
+
 button:active {
   box-shadow: inset 1px 1px 2px #BABECC, inset -1px -1px 2px #FFF;
 }
@@ -73,9 +89,12 @@ button:active {
   line-height: 0;
   width: 48px;
   height: 48px;
+  display: -webkit-inline-box;
   display: inline-flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
   margin: 0 8px;
   margin-right: 0;
   font-size: 19.2px;
@@ -86,4 +105,3 @@ button:active {
   width: 100%;
   color: #0055fe;
 }
-
